@@ -1,0 +1,27 @@
+<html>
+ <head>
+ <script type="text/javascript">
+ function wazon(material_d,stan_d,waga_d)
+{
+this.material=material_d;
+this.stan=stan_d;
+this.waga=waga_d;
+}
+ wazon.prototype.wypisz_dulski = function () 
+ {
+ alert(this.material + ' ' + this.stan+ ' ' + this.waga);
+ };
+var wazon1 = new wazon('szkło', 'stan idealny', '2.5kg'); 
+var wazon2 = new wazon('kamienny', 'stan używany', '3kg');
+wazon1.wypisz_dulski(); 
+wazon2.wypisz_dulski();
+ document.write("dostęp do właściwości"+"<br>");
+
+ document.write("wazon pierwszy"+" "+wazon1.material+" "+wazon1.stan+" "+wazon1.waga);
+ </script>
+ </head>
+<body>
+<br>
+ programowanie obiektowe
+</body>
+</html>
