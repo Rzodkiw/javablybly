@@ -1,0 +1,37 @@
+<html>
+<head>
+ <script type="text/javascript">
+ function okno_zamknij_Dulski()
+ {
+ window.close()
+ }
+ </script>
+</head>
+<body>
+ <form>
+ <textarea name="Dulski" cols="90" rows="30" disabled>
+<!DOCTYPE html>
+
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+    </head>
+    <body>
+        <script>
+            let n_dul = prompt("wpisz n");
+            let silnia_dul = 1;
+            let ilo = 1;
+            for(let i = 1; i <= n_dul; i++){
+                ilo *= i;
+            }
+            document.write(n_dul+"! = "+ilo);
+        </script>
+    </body>
+</html>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_Dulski()"/>
+<script type="text/javascript">
+</script>
+</body>
+</html>
